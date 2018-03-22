@@ -3,4 +3,6 @@
 
 long long solutionEight();
 
+#include "GenericFunctions.h"
+
 #endif SOLUTIONEIGHT_H
