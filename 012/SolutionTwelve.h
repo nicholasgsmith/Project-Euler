@@ -1,7 +1,7 @@
 #ifndef SOLUTIONSIX_H
 #define SOLUTIONEIGHT_H
 
-long long solutionTen();
+long long solutionTwelve();
 
 #include "GenericFunctions.h"
 
