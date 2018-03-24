@@ -1,8 +1,8 @@
-#ifndef SOLUTIONSIX_H
-#define SOLUTIONEIGHT_H
+#ifndef SOLUTIONTEN_H
+#define SOLUTIONTEN_H
 
 long long solutionTen();
 
 #include "GenericFunctions.h"
 
-#endif SOLUTIONEIGHT_H
+#endif SOLUTIONTEN_H

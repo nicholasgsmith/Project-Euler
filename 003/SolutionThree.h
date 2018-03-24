@@ -1,8 +1,8 @@
-#ifndef SOLUTIONSIX_H
-#define SOLUTIONSIX_H
+#ifndef SOLUTIONTHREE_H
+#define SOLUTIONTHREE_H
 
 int solutionThree();
 
 #include "GenericFunctions.h"
 
-#endif SOLUTIONSIX_H
+#endif SOLUTIONTHREE_H

@@ -1,4 +1,4 @@
-#ifndef SOLUTIONSIX_H
+#ifndef SOLUTIONEIGHT_H
 #define SOLUTIONEIGHT_H
 
 long long solutionEight();

@@ -1,6 +1,6 @@
-#ifndef SOLUTIONSIX_H
-#define SOLUTIONSIX_H
+#ifndef SOLUTIONTWO_H
+#define SOLUTIONTWO_H
 
 int solutionTwo();
 
-#endif SOLUTIONSIX_H
+#endif SOLUTIONTWO_H
