@@ -8,7 +8,9 @@ bool prime(int n)
 		return false;
 	}
 
-	for (int i = 2; i <= n / 2; i++)
+	int limit = sqrt(n);
+
+	for (int i = 2; i <= limit; i++)
 	{
 		if (n%i == 0)
 		{
@@ -55,4 +57,25 @@ bool* findPrimes(bool* b, int size)
 	}
 
 	return b;
+}
+
+int numberOfFactors(long long n)
+{
+	int limit = sqrt(n);
+	int factors = 0;
+
+	for (int i = 1; i < limit; i++)
+	{
+		if (n%i == 0)
+		{
+			factors += 2;
+		}
+	}
+
+	if (n%limit == 0)
+	{
+		factors++;
+	}
+
+	return factors;
 }
