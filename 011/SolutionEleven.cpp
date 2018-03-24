@@ -7,6 +7,7 @@ long long solutionEleven()
 
 	int numbers[20][20];
 
+	//We go through the string and extract each number and store in in the array numbers
 	for (int i = 0; i != 20; i++)
 	{
 		for (int j = 0; j != 20; j++)
@@ -21,28 +22,35 @@ long long solutionEleven()
 		}
 	}
 
+	//To store the largest and working product
 	long long largest = 0;
 	long long product = 0;
 
+	//We go through a 17x17 part of the 20x20 grid and check all 4 in a row product that start from on of these numbers
+	//We dont need to get 4 in a row products from every number as * is commutative e.g. a*b=b*a
 	for (int i = 0; i != 17; i++)
 	{
 		for (int j = 0; j != 17; j++)
 		{
+			//Horizontal
 			product = numbers[i][j] * numbers[i][j + 1] * numbers[i][j + 2] * numbers[i][j + 3];
 			if (product > largest)
 			{
 				largest = product;
 			}
+			//Vertical
 			product = numbers[i][j] * numbers[i + 1][j] * numbers[i + 2][j] * numbers[i + 3][j];
 			if (product > largest)
 			{
 				largest = product;
 			}
+			//Y=X diaganol
 			product = numbers[i][j+3] * numbers[i + 1][j+2] * numbers[i + 2][j+1] * numbers[i + 3][j];
 			if (product > largest)
 			{
 				largest = product;
 			}
+			//Y=-X diaganol
 			product = numbers[i][j] * numbers[i + 1][j + 1] * numbers[i + 2][j + 2] * numbers[i + 3][j + 3];
 			if (product > largest)
 			{
@@ -51,6 +59,7 @@ long long solutionEleven()
 		}
 	}
 
+	//We must check some extra locations for horizonal combinations, as they exist in 20x17 places in the gris, bot 17x17 like diaganols
 	for (int i = 17; i != 20; i++)
 	{
 		for (int j = 0; j != 17; j++)
@@ -63,6 +72,7 @@ long long solutionEleven()
 		}
 	}
 
+	//We must check some extra locations for vertical combinations, as they exist in 20x17 places in the gris, bot 17x17 like diaganols
 	for (int i = 0; i != 17; i++)
 	{
 		for (int j = 17; j != 20; j++)

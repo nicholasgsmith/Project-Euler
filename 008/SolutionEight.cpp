@@ -7,10 +7,12 @@ long long solutionEight()
 	long long largest = 0;
 	int counter = 12;
 
+	//We loop through the string number, we start at 12 as we are looking for the 13 digit product
 	while (counter != number.size())
 	{
 		long long product = 1;
 
+		//For each location multiply it by each of the previous 12 digits
 		for (int i = 0; i != 13; i++)
 		{
 			stringstream stream;
@@ -20,6 +22,7 @@ long long solutionEight()
 			product *= value;
 		}
 
+		//Record the largest product
 		if (product > largest)
 		{
 			largest = product;
