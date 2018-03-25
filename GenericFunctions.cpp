@@ -66,7 +66,7 @@ bool* findPrimes(bool* b, int size)
 	{
 		//This if statement is for efficentcy, if b[i] is false then some previous integer, a, divides i
 		//Since a then divides all of i's multiples as well there is no pointer checking them, as a will have already dismissed them
-		if(b[i])
+		if (b[i])
 		{
 			for (int j = i; j * i < size; j++)
 			{
@@ -81,7 +81,7 @@ bool* findPrimes(bool* b, int size)
 //Calculates the number of factors of a number, n
 int numberOfFactors(long long n)
 {
-		//When looking for factors to check up to the square root of the number
+	//When looking for factors to check up to the square root of the number
 	int limit = sqrt(n);
 	int factors = 0;
 
@@ -102,4 +102,16 @@ int numberOfFactors(long long n)
 	}
 
 	return factors;
+}
+
+//Calculates C(n,r) (Pascals triangle)
+long long nChooser(int n, int r)
+{
+	//C(n,r) = (n+1-c)/c for c = 1 to c = r
+	long long result = 1;
+	for (int i = 1; i <= r; i++)
+	{
+		result = result * (n + 1 - i) / i;
+	}
+	return result;
 }
