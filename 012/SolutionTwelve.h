@@ -1,8 +1,8 @@
 #ifndef SOLUTIONTWELVE_H
 #define SOLUTIONTWELVE_H
 
-long long solutionTwelve();
+#include "../GenericFunctions.h"
 
-#include "GenericFunctions.h"
+long long solutionTwelve();
 
 #endif SOLUTIONTWELVE_H

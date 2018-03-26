@@ -1,9 +1,9 @@
 #ifndef SOLUTIONELEVEN_H
 #define SOLUTIONELEVEN_H
 
-long long solutionEleven();
-
 #include <sstream>
 #include <string>
+
+long long solutionEleven();
 
 #endif SOLUTIONELEVEN_H

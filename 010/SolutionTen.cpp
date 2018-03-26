@@ -1,7 +1,7 @@
-include "SolutionTen.h"
+#include "SolutionTen.h"
 using namespace std;
 
-long long solution()
+long long solutionTen()
 {
 	long long total = 0;
 	bool* numbers = new bool[2000001];

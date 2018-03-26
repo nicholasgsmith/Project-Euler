@@ -1,8 +1,8 @@
 #ifndef SOLUTIONSEVEN_H
 #define SOLUTIONSEVEN_H
 
-int solutionSeven();
+#include "../GenericFunctions.h"
 
-#include "GenericFunctions.h"
+int solutionSeven();
 
 #endif SOLUTIONSEVEN_H

@@ -1,4 +1,4 @@
-include "SolutionThirteen.h"
+#include "SolutionThirteen.h"
 using namespace std;
 
 long long solutionThirteen()

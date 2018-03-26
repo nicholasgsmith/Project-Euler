@@ -1,9 +1,9 @@
 #ifndef SOLUTIONTHIRTEEN_H
 #define SOLUTIONTHIRTEEN_H
 
-long long solutionThirteen();
-
 #include <vector>
 #include <string>
+
+long long solutionThirteen();
 
 #endif SOLUTIONTHIRTEEN_H

@@ -1,7 +1,7 @@
-include "SolutionTwelve.h"
+#include "SolutionTwelve.h"
 using namespace std;
 
-long long solution()
+long long solutionTwelve()
 {
 	long long  triangle = 1;
 	int counter = 1;

@@ -1,4 +1,4 @@
-include "SolutionFourteen.h"
+#include "SolutionFourteen.h"
 using namespace std;
 
 long long solutionFourteen()

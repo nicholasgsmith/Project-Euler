@@ -1,4 +1,4 @@
-include "SolutionSeven.h"
+#include "SolutionSeven.h"
 using namespace std;
 
 int solutionSeven()

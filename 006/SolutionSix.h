@@ -1,8 +1,8 @@
 #ifndef SOLUTIONSIX_H
 #define SOLUTIONSIX_H
 
-int solutionSix();
-
 #include <cmath>
+
+int solutionSix();
 
 #endif SOLUTIONSIX_H
