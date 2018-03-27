@@ -14,7 +14,7 @@ long long solutionEleven()
 		{
 			int number;
 			stringstream stream;
-			stream << numbersAsString.substr((j * 3) + (i * 60), 2;
+			stream << numbersAsString.substr((j * 3) + (i * 60), 2);
 			stream >> number;
 			stream.clear();
 
