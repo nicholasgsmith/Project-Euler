@@ -116,6 +116,7 @@ long long nChooser(int n, int r)
 	return result;
 }
 
+//Converts a string to an int
 int toInt(string t)
 {
 	int number;
@@ -126,6 +127,7 @@ int toInt(string t)
 	return number;
 }
 
+//Calculates the factorial of a given integer
 long long fac(int n)
 {
 	if (n <= 1)
@@ -142,6 +144,7 @@ long long fac(int n)
 	return sum;
 }
 
+//Returns the larger of 2 integers
 int max(int n, int m)
 {
 	if (n > m)
