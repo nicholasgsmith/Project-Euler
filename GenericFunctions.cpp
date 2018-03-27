@@ -115,3 +115,38 @@ long long nChooser(int n, int r)
 	}
 	return result;
 }
+
+int toInt(string t)
+{
+	int number;
+	stringstream stream;
+	stream << t;
+	stream >> number;
+	stream.clear();
+	return number;
+}
+
+long long fac(int n)
+{
+	if (n <= 1)
+	{
+		return 1;
+	}
+
+	long long sum = 1;
+
+	for (int i = 2; i <= n; i++)
+	{
+		sum *= i;
+	}
+	return sum;
+}
+
+int max(int n, int m)
+{
+	if (n > m)
+	{
+		return n;
+	}
+	return m;
+}
