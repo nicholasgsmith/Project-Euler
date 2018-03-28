@@ -153,3 +153,15 @@ int max(int n, int m)
 	}
 	return m;
 }
+
+//To sum the digits of a number n
+int sumDigits(long long n)
+{
+	int digits = 0;
+	while (n != 0)
+	{
+		digits += n % 10;
+		n /= 10;
+	}
+	return digits;
+}
