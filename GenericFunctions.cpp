@@ -104,6 +104,33 @@ int numberOfFactors(long long n)
 	return factors;
 }
 
+//Calculates the sum of the factors of n
+int sumOfFactors(long long n)
+{
+	//When looking for factors to check up to the square root of the number
+	int limit = sqrt(n);
+	int factors = 0;
+
+	//Go up to the square root of n and see if any integers divide it evenly
+	for (int i = 1; i < limit; i++)
+	{
+		if (n%i == 0)
+		{
+			//We add the factor and its partner to the sum
+			factors += i;
+			factors += n / i;
+		}
+	}
+
+	//Checks if the sqrt of n is also a factor of it, cant check before as it would be included twice
+	if (n%limit == 0)
+	{
+		factors += limit;
+	}
+
+	return factors;
+}
+
 //Calculates C(n,r) (Pascals triangle)
 long long nChooser(int n, int r)
 {
