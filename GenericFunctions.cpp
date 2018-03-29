@@ -107,12 +107,18 @@ int numberOfFactors(long long n)
 //Calculates the sum of the factors of n
 int sumOfFactors(int n)
 {
+	//Validation
+	if (n <= 0)
+	{
+		return 0;
+	}
+
 	//When looking for factors to check up to the square root of the number
 	int limit = sqrt(n);
-	int factors = 0;
+	int factors = 1;
 
 	//Go up to the square root of n and see if any integers divide it evenly
-	for (int i = 1; i < limit; i++)
+	for (int i = 2; i < limit; i++)
 	{
 		if (n%i == 0)
 		{

@@ -3,4 +3,6 @@
 
 int solutionTwentyOne();
 
+#include "../GenericFunctions.h"
+
 #endif SOLUTIONTWENTYONE_H
