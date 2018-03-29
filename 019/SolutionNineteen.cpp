@@ -19,6 +19,16 @@ int solutionNineteen()
 	//Go through each of the years from 1901 to 2000
 	for (int years = 0; years != 100; years++)
 	{
+		//To take into account leap years
+		if (years % 4 == 3)
+		{
+			monthDays[1] = 29;
+		}
+		else
+		{
+			monthDays[1] = 28;
+		}
+
 		//Go through the 12 months
 		for (int month = 0; month != 12; month++)
 		{

@@ -105,7 +105,7 @@ int numberOfFactors(long long n)
 }
 
 //Calculates the sum of the factors of n
-int sumOfFactors(long long n)
+int sumOfFactors(int n)
 {
 	//When looking for factors to check up to the square root of the number
 	int limit = sqrt(n);
