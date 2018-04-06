@@ -198,3 +198,31 @@ int sumDigits(long long n)
 	}
 	return digits;
 }
+
+//Extracts all the words from a file as seperted by a delimiter
+bool extractWords(string fileName, vector<string>* words, char delimiter)
+{
+	ifstream file(fileName);
+
+	string currentWord = "";
+
+	//Check the file was opened successfully
+	if (!file.is_open())
+	{
+		return false;
+	}
+
+	//Extract all the words
+	while(getline(file, currentWord, delimiter))
+	{
+		words->push_back(currentWord);
+	}
+
+	//The final word may not have a delimiter
+	if (getline(file, currentWord))
+	{
+		words->push_back(currentWord);
+	}
+
+	return true;
+}

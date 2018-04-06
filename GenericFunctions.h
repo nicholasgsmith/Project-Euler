@@ -4,6 +4,11 @@
 #include <cmath>
 #include <string>
 #include <sstream>
+#include <vector>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
 
 bool prime(int n);
 bool palindrome(int n);
@@ -11,9 +16,10 @@ bool* findPrimes(bool* b, int size);
 int numberOfFactors(long long n);
 int sumOfFactors(int n);
 long long nChooser(int n, int r);
-int toInt(std::string t);
+int toInt(string t);
 long long fac(int n);
 int max(int n, int m);
 int sumDigits(long long n);
+bool extractWords(string fileName, vector<string>* words, char delimiter);
 
 #endif GENERICFUNCTIONS_H
