@@ -2,7 +2,7 @@ My solutions in C++ for Project Euler problems
 
 To run any solution just include the appropriate header file and then call solution<ProblemNumber>()
 
-e.g. #include "016\SolutionSixteen.h" ... cout << solutionSixteen(); ...
+e.g. #include "Project-Euler\016\SolutionSixteen.h" ... cout << solutionSixteen(); ...
 
 Include "TestAnswers.h" and run testAnswers() to run each solution and verify it's answer
 
