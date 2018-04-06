@@ -200,7 +200,7 @@ int sumDigits(long long n)
 }
 
 //Extracts all the words from a file as seperted by a delimiter
-bool extractWords(string fileName, vector<string>* words, char delimiter)
+bool extractWords(string fileName, vector<string>& words, char delimiter)
 {
 	ifstream file(fileName);
 
@@ -215,13 +215,13 @@ bool extractWords(string fileName, vector<string>* words, char delimiter)
 	//Extract all the words
 	while(getline(file, currentWord, delimiter))
 	{
-		words->push_back(currentWord);
+		words.push_back(currentWord);
 	}
 
 	//The final word may not have a delimiter
 	if (getline(file, currentWord))
 	{
-		words->push_back(currentWord);
+		words.push_back(currentWord);
 	}
 
 	return true;

@@ -7,7 +7,7 @@ long long solutionTwentyTwo()
 	vector <string> words;
 
 	//Extract all the words
-	if (extractWords("Project-Euler/022/names.txt", &words, ','))
+	if (extractWords("Project-Euler/022/names.txt", words, ','))
 	{
 		for (int i = 0; i != words.size(); i++)
 		{
