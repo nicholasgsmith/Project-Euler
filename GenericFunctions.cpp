@@ -256,3 +256,29 @@ bool sortAlphabetical(string first, string second)
 		}
 	}
 }
+
+//Returns the sum of the score (a=1,b=2,c=3,etc) of the character in a word
+int wordScore(string word)
+{
+	int score = 0;
+	int charScore = 0;
+
+	for (int i = 0; i != word.size(); i++)
+	{
+		charScore = word.at(i);
+
+		//We do not value uppercase above lowercase
+		if (charScore <= 96)
+		{
+			//For uppercase
+			score += word.at(i) - 64;
+		}
+		else
+		{
+			//For lowercase
+			score += word.at(i) - 96;
+		}
+	}
+
+	return score;
+}

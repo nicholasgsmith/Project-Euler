@@ -1,21 +1,29 @@
 #include "SolutionTwentyTwo.h"
 using namespace std;
 
-int solutionTwentyTwo()
+long long solutionTwentyTwo()
 {
-	int amicableTotal = 0;
-	int factors = 0;
+	long long total = 0;
+	vector <string> words;
 
-	//Go through each number, calculate its factor sum and then calulate the factor sum of that
-	for (int i = 2; i != 10000; i++)
+	//Extract all the words
+	if (extractWords("Project-Euler/022/names.txt", &words, ','))
 	{
-		factors = sumOfFactors(i);
-		//Make sure that if a number if amicable with itself that it doesnt count
-		if (i == sumOfFactors(factors) && factors != i)
+		for (int i = 0; i != words.size(); i++)
 		{
-			amicableTotal += i;
+			//Remove the " at the start and end of the words
+			words[i] = words[i].substr(1, words[i].size() - 2);
 		}
 	}
 
-	return amicableTotal;
+	//Sort the vector alphabetically
+	sort(words.begin(), words.end(), sortAlphabetical);
+
+	//Add up the scores for each word
+	for (int i = 0; i != words.size(); i++)
+	{
+		total += (i + 1)*wordScore(words[i]);
+	}
+
+	return total;
 }
