@@ -21,5 +21,6 @@ long long fac(int n);
 int max(int n, int m);
 int sumDigits(long long n);
 bool extractWords(string fileName, vector<string>* words, char delimiter);
+bool sortAlphabetical(string first, string second);
 
 #endif GENERICFUNCTIONS_H

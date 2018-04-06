@@ -226,3 +226,33 @@ bool extractWords(string fileName, vector<string>* words, char delimiter)
 
 	return true;
 }
+
+//Returns true if the alphabetical ordering of 2 strings is correct
+bool sortAlphabetical(string first, string second)
+{
+	int i = 0;
+	while (true)
+	{
+		//Check if either of the charcter, in order, goes before the other
+		if (first.at(i) < second.at(i))
+		{
+			return true;
+		}
+		else if (first.at(i) > second.at(i))
+		{
+			return false;
+		}
+
+		i++;
+
+		//If both characters are the same use the next. If we reach the end of a word the shorter word comes first
+		if (i == second.size())
+		{
+			return false;
+		}
+		else if (i == first.size())
+		{
+			return true;
+		}
+	}
+}
