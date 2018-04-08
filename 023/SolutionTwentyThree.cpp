@@ -3,26 +3,47 @@ using namespace std;
 
 long long solutionTwentyThree()
 {
-	long long total = 0;
-	vector <string> words;
+	vector <int> abundantNumbers;
+	const int limit = 28124;
 
-	//Extract all the words
-	if (extractWords("Project-Euler/022/names.txt", words, ','))
+	//Find every abundant number below our know upper limit
+	for (int i = 0; i != limit; i++)
 	{
-		for (int i = 0; i != words.size(); i++)
+		if (sumOfFactors(i) > i)
 		{
-			//Remove the " at the start and end of the words
-			words[i] = words[i].substr(1, words[i].size() - 2);
+			abundantNumbers.push_back(i);
 		}
 	}
 
-	//Sort the vector alphabetically
-	sort(words.begin(), words.end(), sortAlphabetical);
+	bool sumOfAbundant[limit];
 
-	//Add up the scores for each word
-	for (int i = 0; i != words.size(); i++)
+	//To start with we assume all number are not the sum of two abundant ones
+	for (int i = 0; i != limit; i++)
 	{
-		total += (i + 1)*wordScore(words[i]);
+		sumOfAbundant[i] = false;
+	}
+
+	//Go through each combination of abundant numbers and record the sum
+	for (int i = 0; i != abundantNumbers.size(); i++)
+	{
+		for (int j = i; j != abundantNumbers.size(); j++)
+		{
+			if (abundantNumbers[i] + abundantNumbers[j] < limit)
+			{
+				sumOfAbundant[abundantNumbers[i] + abundantNumbers[j]] = true;
+			}
+		}
+	}
+
+	long long total = 0;
+
+	//Sum all numbers that were not the sum of two abundant numbers
+	for (int i = 0; i != limit; i++)
+	{
+		if (!sumOfAbundant[i])
+		{
+			total += i;
+		}
 	}
 
 	return total;
