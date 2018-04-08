@@ -86,7 +86,7 @@ int numberOfFactors(long long n)
 	int factors = 0;
 
 	//Go up to the square root of n and see if any integers divide it evenly
-	for (int i = 1; i < limit; i++)
+	for (int i = 1; i <= limit; i++)
 	{
 		if (n%i == 0)
 		{
@@ -95,10 +95,10 @@ int numberOfFactors(long long n)
 		}
 	}
 
-	//Checks if the sqrt of n is also a factor of it, cant check before as it would be included twice
+	//Checks if the sqrt of n is also a factor of it, as before it would be included twice
 	if (n%limit == 0)
 	{
-		factors++;
+		factors--;
 	}
 
 	return factors;
@@ -118,7 +118,7 @@ int sumOfFactors(int n)
 	int factors = 1;
 
 	//Go up to the square root of n and see if any integers divide it evenly
-	for (int i = 2; i < limit; i++)
+	for (int i = 2; i <= limit; i++)
 	{
 		if (n%i == 0)
 		{
@@ -128,10 +128,10 @@ int sumOfFactors(int n)
 		}
 	}
 
-	//Checks if the sqrt of n is also a factor of it, cant check before as it would be included twice
-	if (n%limit == 0)
+	//Checks if the sqrt of n is also a factor of it, as before it would be included twice
+	if (limit*limit == n)
 	{
-		factors += limit;
+		factors -= limit;
 	}
 
 	return factors;
