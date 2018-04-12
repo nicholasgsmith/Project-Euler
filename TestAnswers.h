@@ -26,6 +26,7 @@
 #include "021\SolutionTwentyOne.h"
 #include "022\SolutionTwentyTwo.h"
 #include "023\SolutionTwentyThree.h"
+#include "024\SolutionTwentyFour.h"
 
 void testAnswers();
 
