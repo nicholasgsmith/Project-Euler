@@ -282,3 +282,46 @@ int wordScore(string word)
 
 	return score;
 }
+
+//Peforms a merge sort on an array to sort the requested number of elements into order
+void sortArray(int* sortStart, int elements, bool ascending)
+{
+	//Termination and validation
+	if (elements <= 1)
+	{
+		return;
+	}
+
+	//Split the array in 2 and sort each half
+	int middle = elements / 2;
+	sortArray(sortStart, middle, ascending);
+	sortArray(sortStart + middle, elements - middle, ascending);
+
+	//To temporaily store the sorted array and to record where we are in the 2 sorted sections
+	int* sorted = new int[elements];
+	int one = 0;
+	int two = middle;
+
+	for (int i = 0; i != elements; i++)
+	{
+		//Find which of the 2 sorted sections has the element we need and add it to the sorted list
+		if (((sortStart[one] < sortStart[two]) == ascending) || two == elements)
+		{
+			sorted[i] = sortStart[one];
+			one++;
+		}
+		else
+		{
+			sorted[i] = sortStart[two];
+			two++;
+		}
+	}
+
+	//Replace our array with the sorted one
+	for (int i = 0; i != elements; i++)
+	{
+		sortStart[i] = sorted[i];
+	}
+
+	delete sorted;
+}

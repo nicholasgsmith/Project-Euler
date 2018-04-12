@@ -23,5 +23,6 @@ int sumDigits(long long n);
 bool extractWords(string fileName, vector<string>& words, char delimiter);
 bool sortAlphabetical(string first, string second);
 int wordScore(string word);
+void sortArray(int* sortStart, int elements, bool ascending);
 
 #endif GENERICFUNCTIONS_H
