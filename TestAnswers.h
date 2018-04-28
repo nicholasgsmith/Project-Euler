@@ -28,6 +28,7 @@
 #include "023\SolutionTwentyThree.h"
 #include "024\SolutionTwentyFour.h"
 #include "025\SolutionTwentyFive.h"
+#include "026\SolutionTwentySix.h"
 
 void testAnswers();
 

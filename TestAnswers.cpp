@@ -29,4 +29,5 @@ void testAnswers()
 	cout << i++ << ": " << solutionTwentyThree() << " | " << (solutionTwentyThree() == 4179871) << endl;
 	cout << i++ << ": " << solutionTwentyFour() << " | " << (solutionTwentyFour() == 2783915460) << endl;
 	cout << i++ << ": " << solutionTwentyFive() << " | " << (solutionTwentyFive() == 4782) << endl;
+	cout << i++ << ": " << solutionTwentySix() << " | " << (solutionTwentySix() == 983) << endl;
 }
