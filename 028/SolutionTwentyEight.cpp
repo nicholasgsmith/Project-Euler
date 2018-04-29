@@ -5,7 +5,8 @@ long long solutionTwentyEight()
 {
 	//Start off at the end with 1001^2
 	int counter = 1002001;
-	long long total = 0;
+	//We include the middle 1 to begin with
+	long long total = 1;
 
 	//Go through each nxn hollow square starting from 1001x1001
 	//We deduct 2 each time
