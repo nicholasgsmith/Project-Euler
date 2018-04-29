@@ -30,6 +30,7 @@
 #include "025\SolutionTwentyFive.h"
 #include "026\SolutionTwentySix.h"
 #include "027\SolutionTwentySeven.h"
+#include "028\SolutionTwentyEight.h"
 
 void testAnswers();
 
