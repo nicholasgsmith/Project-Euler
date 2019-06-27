@@ -32,6 +32,7 @@
 #include "027\SolutionTwentySeven.h"
 #include "028\SolutionTwentyEight.h"
 #include "029\SolutionTwentyNine.h"
+#include "030\SolutionThirty.h"
 
 void testAnswers();
 

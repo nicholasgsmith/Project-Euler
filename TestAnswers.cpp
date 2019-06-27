@@ -33,4 +33,5 @@ void testAnswers()
 	cout << i++ << ": " << solutionTwentySeven() << " | " << (solutionTwentySeven() == -59231) << endl;
 	cout << i++ << ": " << solutionTwentyEight() << " | " << (solutionTwentyEight() == 669171001) << endl;
 	cout << i++ << ": " << solutionTwentyNine() << " | " << (solutionTwentyNine() == 9183) << endl;
+	cout << i++ << ": " << solutionThirty() << " | " << (solutionThirty() == 443839) << endl;
 }
