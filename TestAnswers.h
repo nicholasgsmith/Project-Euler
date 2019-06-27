@@ -31,6 +31,7 @@
 #include "026\SolutionTwentySix.h"
 #include "027\SolutionTwentySeven.h"
 #include "028\SolutionTwentyEight.h"
+#include "029\SolutionTwentyNine.h"
 
 void testAnswers();
 
