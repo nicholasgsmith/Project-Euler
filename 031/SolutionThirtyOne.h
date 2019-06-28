@@ -1,0 +1,6 @@
+#ifndef SOLUTIONTHIRTYONE_H
+#define SOLUTIONTHIRTYONE_H
+
+int solutionThirtyOne();
+
+#endif SOLUTIONTHIRTYONE_H
