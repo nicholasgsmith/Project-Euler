@@ -34,6 +34,7 @@
 #include "029\SolutionTwentyNine.h"
 #include "030\SolutionThirty.h"
 #include "031\SolutionThirtyOne.h"
+#include "032\SolutionThirtyTwo.h"
 
 void testAnswers();
 

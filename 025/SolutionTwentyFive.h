@@ -3,6 +3,6 @@
 
 long long solutionTwentyFive();
 
-#include <vector>;
+#include <vector>
 
 #endif SOLUTIONTWENTYFIVE_H
